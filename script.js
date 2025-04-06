@@ -53,7 +53,7 @@ function startSpeedTest() {
       const downloadSpeedMbps = ((size / durationInSeconds) / (1024 * 1024) * 8).toFixed(2);
 
       setTimeout(() => {
-        speedElement.innerHTML = `<b>${downloadSpeedMbps} Mbps</b>`;
+        speedElement.innerHTML = `<b>${downloadSpeedMbps} MB/s</b>`;
         testButton.textContent = 'Start Test';
         testButton.disabled = false;
       }, 5000);
